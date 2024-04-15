@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		#function{
+			display: flex;
+			align-items: center;
+		}
+		#fun,#rad,#dev,#not{
+			display: flex;
+			flex-direction: column;
+			width: 32px;
+		}
+		#ifun,#irad,#idev,#inot{
+			margin-top: 2px;
+			margin-bottom: 2px;
+			text-align: center;
+			color:black;
+			background-color:#F0F0F0;
+			border: none;
+		}
+		span{
+			margin-left:3px;
+			margin-right:3px
+		}
+		button{
+			text-align: center;
+		}
+		#ind{
+			margin-top:6px;
+			background-color: rgba(255,255,255,1);
+			border:none;
+			font-size: 24px;
+			color:black
+		}
+	</style>
+	
+	<body>
+		<div id="function">
+			<div id="fun">
+				<button id="funp">▲</button>
+				<input display type="text" id="ifun" value="sin" />
+				<button id="funm">▼</button>
+			</div>
+			
+			<span>(</span>
+			
+			<div id="rad">
+				<button id="radp">▲</button>
+				<input disabled type="text" id="irad" value="1" />
+				<button id="radm">▼</button>	
+			</div>
+			
+			<span>π/</span>
+			
+			<div id="dev">
+				<button id="devp">▲</button>
+				<input disabled type="text" id="idev" value="1" />
+				<button id="devm">▼</button>	
+			</div>
+			
+			<div id="not">
+				<button id="notp">▲</button>
+				<input disabled type="text" id="inot" value="+" />
+				<button id="notm">▼</button>
+			</div>
+			
+			<span>α)</span>
+			
+		</div>
+		
+		<input disabled type="text" id="ind" value="-sinα" />
+		
+		<script src="js/script.js"></script>
+	</body>
+</html>
